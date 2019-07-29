@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue.js</title>
+    <!-- importação do Vue.js -->
+    <script src="js/vue.js"></script>
 </head>
 <body>
-    
+    <div id="root">
+        <p>{{nome}}</p>
+    </div>
+
+    <script>
+        let root = new Vue({
+            el: "#root",
+            data: {
+                nome: "Eraldo Vicente"
+            }
+        });
+    </script>
 </body>
 </html>
